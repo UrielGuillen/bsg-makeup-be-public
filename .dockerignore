@@ -1,0 +1,11 @@
+.git
+.github
+/gradle
+/.gradle
+/src/test
+
+.gitignore
+HELP.md
+buildspec.yml
+bitbucket-pipelines.yml
+appspec.yml

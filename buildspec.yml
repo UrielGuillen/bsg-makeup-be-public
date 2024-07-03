@@ -1,0 +1,18 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      java: corretto17
+  build:
+    commands:
+      - gradle clean build
+  post_build:
+    commands:
+      - echo Build completed
+artifacts:
+  files:
+    - build/libs/bsg-makeup-be-0.0.1-SNAPSHOT.jar
+    - scripts/*.sh
+    - appspec.yml
+  discard-paths: yes
